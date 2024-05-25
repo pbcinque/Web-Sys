@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rockwell&display=swap');
+
+body {
+    font-family: 'Rockwell', serif;
+    background-color: #ffdbe5;
+}
+
+header {
+    background-color: #8a005c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.option input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8a005c;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox:before {
+    content: '✓';
+    font-size: 16px;
+    color: #8a005c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.option input[type="checkbox"]:checked + .custom-checkbox:before {
+    opacity: 1;
+}
+
+.option label {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+#result-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #8a005c;
+}
+
+#result-text {
+    font-size: 20px;
+    color: #333;
+}
+
+#submit-btn {
+    background-color: #8a005c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #ad1978;
+}
