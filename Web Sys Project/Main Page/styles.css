@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rockwell&display=swap');
+
+body {
+  font-family: 'Rockwell', serif;
+  background-color: #ffdbe5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8a005c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0px;
+  font-size: 24px;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #8a005c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #db73b7;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Rockwell', serif;
+    background-color: #ffdbe5;
+    margin: 0;
+    padding: 0;
+}
+
+.display-box {
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+}
+
+.display-box:hover {
+    transform: translateY(-5px);
+}
+
+.display-box img {
+    width: 100%;
+    height: auto;
+}
+
+.display-box .content {
+    padding: 15px;
+}
+
+.display-box .content h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.display-box .content h2 a {
+    text-decoration: none;
+    color: #8a005c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.display-box .content h2 a:hover {
+    color: #db73b7; 
+}
