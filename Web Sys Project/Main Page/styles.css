@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rockwell&display=swap');
+
+body {
+  font-family: 'Rockwell', serif;
+  background-color: #ffdbe5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8a005c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0px;
+  font-size: 24px;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #8a005c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #db73b7;
+}
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.featured-box {
+  width: calc(40% - 20px); /* Two boxes side by side with margin */
+  height: 300px; /* Set the height of the boxes */
+  margin: 10px;
+  display: flex; /* Ensure content is vertically centered */
+  flex-direction: row; /* Set to row for landscape layout */
+}
+
+.featured-box a {
+  display: block;
+  position: relative;
+}
+
+.featured-box img {
+  width: auto; /* Adjust width and height properties */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.featured-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-box:hover .overlay {
+  opacity: 1;
+}
+
+.featured-box .overlay h2 {
+  font-size: 24px; /* Adjusted font size */
+  margin-bottom: 5px; /* Adjusted margin */
+}
+
+.featured-box .overlay p {
+  font-size: 18px; /* Adjusted font size */
+  margin: 0;
+  text-align: center;
+}
+
